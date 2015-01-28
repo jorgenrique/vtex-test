@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>VTEX TEST</title>
+  <meta name="description" content="Test for VTEX">
+  <meta name="author" content="Jorge Giraldo">
+
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<header>
+		<h1>VTEX</h1>
+    <h2>Input test</h2>
+  	<h3>Given an object with properties regex and mask, create an input type="text" element with special mask and validation behaviors.</h3>
+    <h4>Libraries used: JQuery 1.11.2 & JQuery Mask Plugin</h4>
+	</header>
+  <section>
+    <form:form id="register-form" method="post" action="${formAction}" modelAttribute="registrationFormStep2">
+      <label for="test_field">Please enter your phone number</label>
+      <input type="text" id="test_field" name="test_field" placeholder="+Country Code (Area Code) Phone Number"/>
+      <div id="success">Phone number has been submitted. Thanks!</div>
+      <div id="error">There's an error with your phone number. Please check it and submit it again. Thanks!</div>
+      <div id="button_holder"><button>Validate Phone</button></div>
+    </form:form>
+  </section>
+  <h4>Jorge Giraldo<br><a href="mailto:yo@jorgenrique.com">yo@jorgenrique.com</a></h4>
+</body>
+</html>
